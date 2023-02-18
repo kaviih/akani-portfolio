@@ -39,20 +39,20 @@
               link__hover-effect--black
             ">Projects</a>
           </li>
-          <li class="nav__link" onclick="toggleModal()">
+          <li class="nav__link" onclick="toggleModal()" id="open_modal_nav">
             <a href="#" class="
               nav__link--anchor
               link__hover-effect
               link__hover-effect--black
             ">Contact</a>
           </li>
-          <li class="nav__link click" onclick="toggleContrast()">
+         <!-- <li class="nav__link click" onclick="toggleContrast()">
             <a href="#" class="
               nav__link--anchor
               link__hover-effect
               link__hover-effect--black
             "><i class="fas fa-adjust"></i></a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <header class="header">
@@ -60,7 +60,7 @@
           <h1 class="title">Hey</h1>
           <h1 class="title blue">I'm Akani.</h1>
           <p class="header__para">
-            I'm a <b class="blue">Frontend Software Engineer</b> that enjoys developing responsive web applications
+            I'm a <b class="blue">Software Engineer</b> that enjoys developing responsive web applications
             with great user experiences.
             <br>
             Here's a bit more <b class="blue click" onclick="toggleModal()">about me</b>.
@@ -79,26 +79,34 @@
         </div>
       </header>
       <a href="#">
-        <button class="mail__btn click" onclick="toggleModal()">
+        <button class="mail__btn click" onclick="toggleModal()" id="openModalMail">
           <i class="fas fa-envelope"></i>
         </button>
       </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
-      </a>
-      <button id="openModalBtn"></button>
-      <div class="modal">
+      </a> 
+
+      <button id="openModall">
+      </button>
+      <br>
+      <div class="modal-container" id="modal-container">
+        <div class="modal">
+          <h1 class="modal-heading">This is my email</h1>
+          <input type="staticText" value="akanihlongwane7@gmail.com" id="email" class="email-modal">
+          <button id="close_modal" class="close__modal" onclick="myEmail()">
+            Copy email
+          </button>
+        </div>
+      </div>
+      <!-- <button id="openModalBtn"></button>
+      <div class="modal-container" id="modal">
         <div class="modal__half modal__about">
           <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
-          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+          <h4 class="modal__sub-title modal__sub-title--about">Software Engineer.</h4>
           <p class="modal__para">
-            I'm a 21 year-old Australian <b class="blue">frontend software engineer</b> with experience developing
-            websites for top-tech companies like <b class="blue">Google</b> and <b class="blue">Canva</b>.
-            <br>
-            I currently solve extremely difficult engineering
-            problems every day with <b class="blue">HTML</b>, <b class="blue">CSS</b> and <b
-              class="blue">JavaScript</b>
-            in Canva's Video team.
+             I'm a <b class="blue">Full-stack software engineer</b> with experience developing
+            <b class="blue"> interactive</b> and <b class="blue">responsive</b> websites.
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
@@ -165,7 +173,7 @@
             Thanks for the message! Looking forward to speaking to you soon.
           </div>
         </div>
-      </div>
+      </div> -->
       <!--<img src="./assets/semi circle.svg" class="shape shape--0">
       <img src="./assets/circle.svg" class="shape shape--1">
       <img src="./assets/squiggly.svg" class="shape shape--2">
@@ -284,7 +292,7 @@
             footer__social--link
             link__hover-effect
             link__hover-effect--white
-          ">
+          " id="openModalFooter">
               Contact
             </a>
             <a href="./pf assets/hlongwane-dev.resume.cv.pdf" target="_blank" class="
