@@ -10,6 +10,13 @@ function myEmail() {
     alert("Copied the text: " + copyText.value);
 }
 
+//DARK MODE
+
+function toggleContrast() {
+    var element = document.body;
+    element.classList.toggle("dark-theme");
+  }
+  
 //MODAL
 
 /* const open_modal_nav = document.getElementById('open_modal_nav')
@@ -17,3 +24,4 @@ function myEmail() {
  const close_modal = document.getElementById('close_modal')
 
 open_modal_nav.addEventListener('click', ()) */
+
