@@ -16,12 +16,42 @@ function toggleContrast() {
     var element = document.body;
     element.classList.toggle("dark-theme");
   }
-  
+
 //MODAL
 
-/* const open_modal_nav = document.getElementById('open_modal_nav')
- const modal_container = document.getElementById('modal_container')
- const close_modal = document.getElementById('close_modal')
+ /*const open = document.querySelector('openModalMail');
+ const modal = document.querySelector('modal');
+ const modal_container = document.querySelector('modal_container');
+ const close = document.querySelector('close');
 
-open_modal_nav.addEventListener('click', ()) */
+ const openModal = function () {
+    modal.classList.add("show");
+    modal_container.classList("show");
+ }
 
+ open.addEventListener("click", openModal)
+
+
+
+
+
+/*open.addEventListener('click', () => {
+    modal_container.classList.add('show'); 
+}) 
+
+close.addEventListener('click', () => {
+    modal_container.classList.remove('show');
+}) 
+
+btn.onclick = function() {
+    modal.style.display = "open";
+  }*/
+
+  /*function toggleModal() {
+    var modal_container = document.getElementById("modal_container");
+    if (openModalMail.style.display === "modal_container") {
+      modal_container.style.display = "";
+    } else {
+        close.style.display = "none";
+    }
+  }*/
